@@ -1,0 +1,112 @@
+.row {
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 5px;
+    
+}
+
+h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.box1, .box2, .box3 {
+    border: 4px solid black;
+    background-color: grey;
+    color:black;
+    position: relative;
+    width: 32%;
+    margin: 3px;
+    display: inline-flex;
+    padding: 30px 5px 5px 10px;
+
+}
+
+.my-menu1, .my-menu2, .my-menu3 {
+
+    width: 100px;
+    padding: calc(center);
+    position: absolute; 
+    margin-top: 0px;
+    top: 0px;
+    right: 0px;
+    border-top: 0px solid black;
+    border-right: 0px solid black;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black; 
+
+}
+
+.my-menu1 {
+    background-color: red;
+}
+
+
+.my-menu2 {
+    background-color: pink;
+}
+
+.my-menu3 {
+    background-color: orange;
+}
+
+p {
+    margin-right: auto;
+    margin-left: auto;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+
+/************ For Large Device **************/
+
+@media(min-width= 992px){
+    .box1{
+        width:33.33%;
+    }
+    
+    .box2 {
+        width: 33.33%;
+    }
+    
+    .box3{
+        width: 33.33%;
+    }
+}
+
+/*********** For Medium Device *************/
+@media(min-width: 768px) and (max-width:991px){
+     
+    .box1 {
+        width: 45%;
+    }
+    
+    .box2{
+        width: 45%;
+         }
+
+    .box3{
+        width: 91%;
+    }
+
+}
+
+/*********** For small Device *************/
+@media(max-width: 767px) {
+    .box1 {
+        width: 100%;
+    }
+    
+    .box2{
+        width: 100%;
+    }
+
+    .box3{
+        width: 100%;
+    }
+
+}
